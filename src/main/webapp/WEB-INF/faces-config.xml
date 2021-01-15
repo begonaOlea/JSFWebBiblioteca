@@ -29,7 +29,7 @@
         </navigation-case>
         <navigation-case>
             <from-outcome>altalibro</from-outcome>
-            <to-view-id>/alta-libro.xhtml</to-view-id>
+            <to-view-id>/alta_libro.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-outcome>login</from-outcome>
@@ -37,6 +37,10 @@
         </navigation-case>
         <navigation-case>
             <from-outcome>libros</from-outcome>
+            <to-view-id>/lista-libros.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>altalibro</from-outcome>
             <to-view-id>/lista-libros.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
