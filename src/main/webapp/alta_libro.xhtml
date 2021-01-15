@@ -24,6 +24,7 @@
                     <h:outputLabel value="#{textos.libro_id}" for="id" />
                     <h:inputText value="#{altaLibro.libroNuevo.id}" 
                              required="true" id="id">
+                        <f:validateLongRange minimum="1" />
                     </h:inputText>
                     <h:message for="id"/>
                     
@@ -31,16 +32,18 @@
                     <h:outputLabel value="#{textos.libro_titulo}" for="titulo" />
                     <h:inputText value="#{altaLibro.libroNuevo.titulo}" 
                              required="true" id="titulo">
+                        <f:validateLength minimum="1" maximum="40" />
                     </h:inputText>
                     <h:message for="titulo"/>
                     
-                    <ui:remove>FILA 3 - TITULO</ui:remove> 
+                    <ui:remove>FILA 3 - AUTOR</ui:remove> 
                     <h:outputLabel value="#{textos.libro_autor}" for="aut" />
                     <h:inputText value="#{altaLibro.libroNuevo.autor}" 
-                             required="true" id="aut">
+                                 required="true" id="aut"
+                                 validator="#{altaLibro.validarAutor}">
                     </h:inputText>
                     <h:message for="aut"/>
-                    
+                   
 
                     <ui:remove>FILA 4 - GÉNERO</ui:remove>
                     <h:outputLabel value="#{textos.libro_genero}" for="gen" />

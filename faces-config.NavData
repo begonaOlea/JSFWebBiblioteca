@@ -3,10 +3,9 @@
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
         <Node id="login.xhtml" x="140" y="404" zoom="true"/>
-        <Node id="lista-libros-alquilados.xhtml" x="18" y="225" zoom="true"/>
         <Node id="lista-generos.xhtml" x="13" y="149" zoom="true"/>
+        <Node id="lista-libros-alquilados.xhtml" x="18" y="225" zoom="true"/>
         <Node id="index.xhtml" x="61" y="24" zoom="true"/>
-        <Node id="alta-libro.xhtml" x="688" y="443" zoom="true"/>
         <Node id="index2.xhtml" x="400" y="150" zoom="true"/>
         <Node id="alta-genero.xhtml" x="382" y="401" zoom="true"/>
         <Node id="alta_libro.xhtml" x="150" y="300" zoom="true"/>

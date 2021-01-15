@@ -46,6 +46,7 @@
     </navigation-rule>
     
     <application>
+        <message-bundle>com.biblioteca.web.recursos.mensajes</message-bundle>
         <resource-bundle>
             <base-name>com.biblioteca.web.recursos.textos</base-name>
             <var>textos</var>
