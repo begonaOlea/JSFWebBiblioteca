@@ -15,7 +15,13 @@
         Mensajes: <h:messages globalOnly="true" />
         <hr />
         <h:form id="formAltaGenero">
-            Identificador: <h:inputText value="#{altaGeneroMB.generoNuevo.id}" />
+            Identificador: 
+            
+            <h:inputText value="#{altaGeneroMB.generoNuevo.id}" >
+                <f:ajax event="keyup" execute="@this" render="mensajeIdExiste"/>
+            </h:inputText>
+            <h:outputLabel value="#{altaGeneroMB.mensajeExisteId}" 
+                           id="mensajeIdExiste" />
             <br />
             Descripcion: <h:inputText value="#{altaGeneroMB.generoNuevo.descripcion}" />            
             <br />

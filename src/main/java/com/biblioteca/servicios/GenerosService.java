@@ -19,4 +19,7 @@ public class GenerosService {
          DB.altaGenero(genero);
     }
     
+    public boolean existeYaId(int id){
+       return  DB.existeIdGenero(id);
+    }
 }

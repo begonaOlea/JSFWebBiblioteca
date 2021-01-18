@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-
 public class DB {
 
     private static Map<Integer, Libro> libros;
@@ -135,4 +134,8 @@ public class DB {
         }
         generos.put(g.getId(), g);
     }
+     
+     public synchronized static boolean existeIdGenero(int id){
+         return generos.containsKey(id);
+     }
 }
